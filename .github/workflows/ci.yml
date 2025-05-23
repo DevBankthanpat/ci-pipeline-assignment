@@ -1,0 +1,19 @@
+name: CI By devBank
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+    build:
+        name: Build and Test
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Install dependencies
+              run: npm install
+
+            - name: Run tests
+              run: npm test
+            
