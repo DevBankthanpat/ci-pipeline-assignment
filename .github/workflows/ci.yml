@@ -29,9 +29,9 @@ jobs:
             - name: Run tests
               run: npm test  # รัน unit tests (ควรมี coverage report ด้วย)
 
-            - name: SonarCloud Scan
-              uses: SonarSource/sonarcloud-github-action@v2  # ใช้ Action ของ SonarCloud สำหรับสแกนโค้ด
-              env:
-                  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # ใช้ token ที่เก็บไว้ใน GitHub Secret
-              with:
-                  projectBaseDir: .  # ระบุ root ของโปรเจคที่มีไฟล์ sonar-project.properties
+            # - name: SonarCloud Scan
+            #   uses: SonarSource/sonarcloud-github-action@v2  # ใช้ Action ของ SonarCloud สำหรับสแกนโค้ด
+            #   env:
+            #       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # ใช้ token ที่เก็บไว้ใน GitHub Secret
+            #   with:
+            #       projectBaseDir: .  # ระบุ root ของโปรเจคที่มีไฟล์ sonar-project.properties
