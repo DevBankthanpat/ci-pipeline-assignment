@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+      - develop
+      
 jobs:
   # —— Job 1: Build, Test & Analyze (รวม SonarCloud) ——
   build-test-analyze:
