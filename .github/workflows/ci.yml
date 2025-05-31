@@ -3,7 +3,7 @@ name: CI/CD Pipeline Week4
 on:
   push:
     branches:
-      - dev # main
+      - main
     paths:
       - 'src/**'
       - 'package.json'
